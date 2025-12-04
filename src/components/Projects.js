@@ -1,8 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/cityBus.png";
+import projImg2 from "../assets/img/travelAura.jpeg";
+import projImg3 from "../assets/img/BUY , SELL , CONNECT , IMPACT (5).png";
+import projImg4 from "../assets/img/videoHub.jpeg";
+import projImg5 from "../assets/img/SmartAgri.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -35,14 +37,14 @@ export const Projects = () => {
       title: "VideoHub – Java-based Video Platform",
       description:
         "Group project – Java-based video streaming/management system with playlists and user features.",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
       url: "https://github.com/Kamindumenula/VideoHub-JavaProject.git",
     },
     {
       title: "SmartAgriConnect – Smart Agriculture System",
       description:
         "Group project – MERN stack app for agri inventory, bidding, farmer product listings and management.",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
       url: "https://github.com/Kamindumenula/Smart-AgriConnect.git",
     },
   ];
