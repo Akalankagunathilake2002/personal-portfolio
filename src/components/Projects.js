@@ -51,18 +51,18 @@ export const Projects = () => {
 
   const individualProjects = [
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio – Design & Development",
+      title: "LuxeHeaven",
+      description: "Pending project",
       imgUrl: projImg1,
     },
     {
       title: "Finance Tracker App",
-      description: "Individual project – Web app for budgeting",
+      description: "Pending project",
       imgUrl: projImg2,
     },
     {
-      title: "UI Component Library",
-      description: "Individual project – Reusable React components",
+      title: "Pyheligo",
+      description: "Pending project",
       imgUrl: projImg3,
     },
   ];
