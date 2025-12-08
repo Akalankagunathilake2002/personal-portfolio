@@ -53,17 +53,17 @@ export const Projects = () => {
     {
       title: "LuxeHeaven",
       description: "Pending project",
-      imgUrl: projImg1,
+      imgUrl:"",
     },
     {
       title: "Finance Tracker App",
       description: "Pending project",
-      imgUrl: projImg2,
+      imgUrl: "",
     },
     {
       title: "Pyheligo",
       description: "Pending project",
-      imgUrl: projImg3,
+      imgUrl: "",
     },
   ];
 

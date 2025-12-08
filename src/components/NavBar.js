@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/Newlogo.jpeg';
+import logo from '../assets/img/LOGOCHAT.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';       // LinkedIn
-import navIconGithub from '../assets/img/github2.png'; // GitHub
+import navIconGithub from '../assets/img/gitnew2 copy.png'; // GitHub
 import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 

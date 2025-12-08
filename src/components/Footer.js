@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/Newlogo.jpeg";
+import logo from "../assets/img/LOGOCHAT.png";
 import navIcon1 from "../assets/img/nav-icon1.svg"; // LinkedIn
-import navIconGithub from "../assets/img/github2.png"; // GitHub icon
+import navIconGithub from "../assets/img/gitnew2 copy.png"; // GitHub icon
 
 export const Footer = () => {
   return (
