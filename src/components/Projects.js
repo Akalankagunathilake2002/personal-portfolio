@@ -1,139 +1,88 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+
 import projImg1 from "../assets/img/cityBus.png";
 import projImg2 from "../assets/img/travelAura.jpeg";
 import projImg3 from "../assets/img/BUY , SELL , CONNECT , IMPACT (5).png";
 import projImg4 from "../assets/img/videoHub.jpeg";
 import projImg5 from "../assets/img/SmartAgri.jpeg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-
-  const groupProjects = [
+  const projects = [
     {
       title: "CityBus – Bus Scheduling System",
       description:
-        "Group project – City bus scheduling, passenger management, reviews and bus management features.",
+        "City bus scheduling, passenger management, reviews and bus management features.",
       imgUrl: projImg1,
       url: "https://github.com/Dilmith-Ranasinghe518/CityBus.git",
     },
     {
       title: "TravelAura – Travel & Explore Platform",
       description:
-        "Group project – MERN-based travel management system with destinations, accommodations, blogs and events.",
+        "MERN-based travel management system with destinations, accommodations, blogs and events.",
       imgUrl: projImg2,
       url: "https://github.com/Dilmith-Ranasinghe518/TravelAura.git",
     },
     {
       title: "LocalLoop – SDG 08 Community Marketplace",
       description:
-        "Group project – Mobile app focused on SDG 08 to support local businesses, events and hyperlocal marketplace.",
+        "Mobile app focused on SDG 08 to support local businesses, events and hyperlocal marketplace.",
       imgUrl: projImg3,
       url: "https://github.com/Dilmith-Ranasinghe518/LocalLoop.git",
     },
     {
       title: "VideoHub – Java-based Video Platform",
       description:
-        "Group project – Java-based video streaming/management system with playlists and user features.",
+        "Java-based video streaming/management system with playlists and user features.",
       imgUrl: projImg4,
       url: "https://github.com/Kamindumenula/VideoHub-JavaProject.git",
     },
     {
       title: "SmartAgriConnect – Smart Agriculture System",
       description:
-        "Group project – MERN stack app for agri inventory, bidding, farmer product listings and management.",
+        "MERN stack app for agri inventory, bidding, farmer product listings and management.",
       imgUrl: projImg5,
       url: "https://github.com/Kamindumenula/Smart-AgriConnect.git",
     },
-  ];
 
-  const individualProjects = [
-    {
-      title: "LuxeHeaven",
-      description: "Pending project",
-      imgUrl:"",
-    },
-    {
-      title: "Finance Tracker App",
-      description: "Pending project",
-      imgUrl: "",
-    },
-    {
-      title: "Pyheligo",
-      description: "Pending project",
-      imgUrl: "",
-    },
+   
   ];
 
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col xs={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
                   <p>
-                    Here you can find a selection of my work, including{" "}
-                    <b>group projects</b> done with teammates and{" "}
-                    <b>individual projects</b> I’ve built on my own.
+                    Here you can find a selection of my work and the projects I’m currently building.
                   </p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="group">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="group">Group Projects</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="individual">
-                          Individual Projects
-                        </Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible
-                          ? "animate__animated animate__slideInUp"
-                          : ""
-                      }
-                    >
-                      <Tab.Pane eventKey="group">
-                        <Row>
-                          {groupProjects.map((project, index) => {
-                            return (
-                              <ProjectCard key={index} {...project} />
-                            );
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="individual">
-                        <Row>
-                          {individualProjects.map((project, index) => {
-                            return (
-                              <ProjectCard key={index} {...project} />
-                            );
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                    </Tab.Content>
-                  </Tab.Container>
+
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__slideInUp" : ""
+                    }
+                  >
+                    <Row className="project-grid">
+                      {projects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                      ))}
+                    </Row>
+                  </div>
                 </div>
               )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
+
       <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
   );
