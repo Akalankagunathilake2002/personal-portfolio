@@ -70,7 +70,7 @@ export const About = () => {
 
                           {/* Optional: Put your CV in public folder as /cv.pdf */}
                           <div className="about-actions">
-                            <a className="about-btn" href="/cv.pdf" target="_blank" rel="noreferrer">
+                            <a className="about-btn" href="https://1drv.ms/b/c/9ffa790776c4bc33/IQCcgEl29Td-Ra_PIvsckE42AadLWK1lOetJ1pYZ2kjVOH8?e=9pnA3F" target="_blank" rel="noreferrer">
                               Download CV
                             </a>
                             <a className="about-btn outline" href="#contact">
