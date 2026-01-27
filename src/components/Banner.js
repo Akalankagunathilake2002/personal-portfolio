@@ -10,7 +10,6 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
 
   const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
   const period = 2000;
@@ -22,7 +21,7 @@ export const Banner = () => {
 
     return () => clearInterval(ticker);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [text]);
+  }, [text, delta]); // delta included so interval timing updates correctly
 
   const tick = () => {
     const i = loopNum % toRotate.length;
@@ -38,15 +37,11 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prev) => prev - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum((prev) => prev + 1);
-      setIndex(1);
       setDelta(500);
-    } else {
-      setIndex((prev) => prev + 1);
     }
   };
 
@@ -82,7 +77,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
 
-          {/* RIGHT SIDE — PROFILE IMAGE (FIXED) */}
+          {/* RIGHT SIDE */}
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
