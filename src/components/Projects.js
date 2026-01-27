@@ -6,6 +6,7 @@ import projImg2 from "../assets/img/travelAura.jpeg";
 import projImg3 from "../assets/img/BUY , SELL , CONNECT , IMPACT (5).png";
 import projImg4 from "../assets/img/videoHub.jpeg";
 import projImg5 from "../assets/img/SmartAgri.jpeg";
+import projImg6 from "../assets/img/realE copy.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -47,6 +48,14 @@ export const Projects = () => {
         "MERN stack app for agri inventory, bidding, farmer product listings and management.",
       imgUrl: projImg5,
       url: "https://github.com/Kamindumenula/Smart-AgriConnect.git",
+    },
+
+    {
+      title: "Luxe Haven – real estate platform using Next.js",
+      description:
+        "Next.js application for real estate listings, user authentication, and property management and PostgreSQL of NEON.",
+      imgUrl: projImg6,
+      url: "https://github.com/Akalankagunathilake2002/luxe-haven",
     },
 
    
