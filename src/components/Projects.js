@@ -7,6 +7,8 @@ import projImg3 from "../assets/img/BUY , SELL , CONNECT , IMPACT (5).png";
 import projImg4 from "../assets/img/videoHub.jpeg";
 import projImg5 from "../assets/img/SmartAgri.jpeg";
 import projImg6 from "../assets/img/realE copy.png";
+import projImg7 from "../assets/img/learnifyAI.png";
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -56,6 +58,13 @@ export const Projects = () => {
         "Next.js application for real estate listings, user authentication, and property management and PostgreSQL of NEON.",
       imgUrl: projImg6,
       url: "https://github.com/Akalankagunathilake2002/luxe-haven",
+    },
+    {
+      title: "Learnify AI – AI-Powered Learning Platform",
+      description:
+        "Learning platform with courses and instructor guidance with multiple AI engines, interactive content and user management.That used fast api and  svelte as tech stacks with Gemini AI & Groq AI",
+      imgUrl: projImg7,
+      url: "https://github.com/Akalankagunathilake2002/Learnify-AI",
     },
 
    
