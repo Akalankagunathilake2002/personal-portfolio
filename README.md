@@ -1,4 +1,4 @@
-<img width="1470" height="802" alt="image" src="https://github.com/user-attachments/assets/4c0e47bb-00b3-4dde-9a49-eca61f198278" /># Personal Portfolio Website in React
+# Personal Portfolio Website in React
 
 <img width="1470" height="802" alt="image" src="https://github.com/user-attachments/assets/e122725a-90ea-494d-80a0-490af4fe2c27" />
 
