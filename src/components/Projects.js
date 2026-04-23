@@ -8,6 +8,7 @@ import projImg4 from "../assets/img/videoHub.jpeg";
 import projImg5 from "../assets/img/SmartAgri.jpeg";
 import projImg6 from "../assets/img/realE copy.png";
 import projImg7 from "../assets/img/learnifyAI.png";
+import projImg8 from "../assets/img/medisync.jpeg";
 
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -65,6 +66,13 @@ export const Projects = () => {
         "Learning platform with courses and instructor guidance with multiple AI engines, interactive content and user management.That used fast api and  svelte as tech stacks with Gemini AI & Groq AI",
       imgUrl: projImg7,
       url: "https://github.com/Akalankagunathilake2002/Learnify-AI",
+    },
+    {
+      title: "Building a Microservices-Based Smart Healthcare System  — with Docker, Kubernetes, and Azure VM Deployment",
+      description:
+        "A comprehensive healthcare system built using microservices architecture, deployed on Azure VM with Docker and Kubernetes.",
+      imgUrl: projImg8,
+      url: "https://medi-sync-lk.vercel.app/",
     },
 
    
